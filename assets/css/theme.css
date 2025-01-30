@@ -73,6 +73,10 @@ ol {
   --white: #ffff;
   --black: #000;
 
+  --blur-soft: 10px;
+  --blur-medium: 15px;
+  --blur-hard: 20px;
+
   --font-family: "Roboto", Sans-serif;
 
   --spacing-xs: 0.5rem;

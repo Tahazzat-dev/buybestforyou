@@ -11,45 +11,129 @@
   </head>
   <body class="">
     <header class="bbfy-header">
-      <div class="bbfy-header-inner bbfy-container">
+      <div class="bbfy-header-inner flex flex_column">
         <!-- top header -->
-        <div class="header-top flex flex_align_center flex_justify_between">
-          <button class="mobile-menu-toggler flex flex_column">
-            <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
-                <path d="M0 96C0 78.3 14.3 64 32 64h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"/>
-            </svg>
-          </button>
-
-          <div class="bbfy-site-logo">
-            <a href="/">
-              <img src="/assets/img/site-logo.png" alt="site logo" />
-            </a>
-          </div>
-          <div class="search-container">
-            <div class="search-icon">
+        <div
+          class="header-top "
+        >
+          <div class="header-top-inner bbfy-container flex flex_align_center flex_justify_between">
+            <!-- mobile nav menu toggler -->
+            <button class="mobile-menu-toggler flex flex_column mobi">
               <svg
+                class="menu-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="currentColor"
-                aria-hidden="true"
-                viewBox="0 0 512 512"
+                viewBox="0 0 448 512"
+                width="24"
+                height="24"
               >
                 <path
-                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  d="M0 96C0 78.3 14.3 64 32 64h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"
                 />
               </svg>
+            </button>
+
+            <!-- site logo -->
+            <div class="bbfy-site-logo">
+              <a href="/">
+                <img src="/assets/img/site-logo.png" alt="site logo" />
+              </a>
             </div>
-            <input
-              class="search-input desk"
-              placeholder="What are you looking for today?"
-              type="text"
-            />
+
+            <!-- content search container -->
+            <div class="search-container flex flex_align_center">
+              <div class="search-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg>
+              </div>
+              <input
+                class="fs-md search-input desk"
+                placeholder="What are you looking for today?"
+                type="text"
+              />
+            </div>
           </div>
         </div>
 
         <!-- bottom header -->
-        <div class="header-bottom"></div>
+        <div class="header-bottom ">
+          <div class="header-bottom-inner bbfy-container flex flex_align_center flex_justify_between">
+            <!-- nav links -->
+          <ul class="nav-categories flex flex_align_center">
+            <li>
+              <button data-category="electronics" type="button" class="">Electronics</button>
+            </li>
+            <li>
+              <button data-category="kitchen" type="button" class="">Kitchen</button>
+            </li>
+            <li>
+              <button data-category="lawn-and-garden" type="button" class="">Lawn & Garden</button>
+            </li>
+            <li>
+              <button data-category="home" type="button" class="">Home</button>
+            </li>
+            <li>
+              <button data-category="computer" type="button" class="">Computer</button>
+            </li>
+            <li>
+              <button data-category="all-categories" type="button" class="">All Categories</button>
+            </li>
+          </ul>
+
+          <!-- hot topics -->
+          <ul class="hot-links flex flex_align_center">
+            <li>
+              <a href="#">Gifts</a>
+            </li>
+            <li>
+              <a href="#">Deals</a>
+            </li>
+            <li>
+              <a href="#">Trending</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+
+          <!-- sub categories -->
+          <div class="">
+            <div class="sub-categories-inner bbfy-container">
+
+              <!-- sub-categories of a category -->
+               <ul class="sub-categories">
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Audio</a></li>
+                  <li><a href="#">Audio & Video Accessories</a></li>
+                  <li><a href="#">Binoculars, Microscropes & Telescopes</a></li>
+                  <li><a href="#">Blu-ray</a></li>
+                  <li><a href="#">Cables</a></li>
+                  <li><a href="#">Calculators</a></li>
+                  <li><a href="#">Camera & Photo</a></li>
+                  <li><a href="#">Cell Phones & Accessories</a></li>
+                  <li><a href="#">Chargers</a></li>
+                  <li><a href="#">Charging & Power</a></li>
+                  <li><a href="#">Clocks</a></li>
+                  <li><a href="#">Computer Accessories & Peripherals</a></li>
+                  <li><a href="#">Computer Components</a></li>
+                  <li><a href="#">Computer Monitors</a></li>
+                  <li><a href="#">Desktop Monitors</a></li>
+                  <li><a href="#">Drones</a></li>
+                  <li><a href="#">Drones & Accessories</a></li>
+                  <li><a href="#">Earbuds</a></li>
+                  <li><a href="#">Fitness-trackers</a></li>
+                  <li><a href="#">Gaming & Accessories</a></li>
+               </ul>
+            </div>
+         </div>
       </div>
     </header>
     <main class="bbfy-main-wrapper bbfy-container"></main>
