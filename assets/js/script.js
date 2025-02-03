@@ -32,8 +32,7 @@
                 $(document).on('click touch', '.mobile-menu-toggler',e=>this.showNavlinkDrawer(e));
                 $(document).on('click touch', '.drawer-closer-btn' ,e=>this.hideNavlinkDrawer(e));
                 $(document).on('click touch', '.mobile-nav-category button' ,e=>this.toggleSubcategory(e));
-                $(document).on('click touch', '.mobi-search-container-toggler .x-mark-icon' ,this.toggleMobileSearchContainer)
-                $(document).on('click touch', '.mobi-search-container-toggler .search-icon' , (e)=>this.toggleMobileSearchIcons(e).bind(this));
+                $(document).on('click touch', '.mobi-search-container-toggler .x-mark-icon, .mobi-search-container-toggler .search-icon' ,this.toggleMobileSearchContainer.bind(this))
             }
 
             translateSubcategoryContainer(){

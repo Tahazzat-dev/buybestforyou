@@ -931,14 +931,14 @@ body {
 
     /* header style  */
     .bbfy-header .bbfy-site-logo {
-      max-width: 230px;
+      max-width: 210px;
     }
 
     .bbfy-header .search-container {
       max-width: 350px;
-  }
+      display: flex;
+}
 
-  
     .bbfy-header .search-input {
       border-radius: 8px;
       padding: 8px 10px;
@@ -965,6 +965,10 @@ body {
     display: none;
   }
 
+  .bbfy-header .search-container {
+    max-width: 320px;
+}
+
 }
 
 /* phones ( extra large )  */
@@ -983,6 +987,10 @@ body {
   .bbfy-header-inner{
     padding: 15px 0;
   }
+
+  .bbfy-header .search-container {
+ display: none;
+}
 
   /* header style */
   .bbfy-header-inner .mobile-menu-toggler {
@@ -1256,9 +1264,11 @@ line-height: var(--lh-md);
   padding: 8px 14px;
 }
 
+.bbfy-header  .mobi-search-input-container.active {
+  padding-top: 15px;
 }
 
-
+}
 
 
 /* TODO: have to remove this */
