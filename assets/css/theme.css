@@ -72,6 +72,7 @@ ol {
   --white-orange: #ffb795;
   --white: #ffff;
   --black: #000;
+  --semitransparent-black:rgba(0, 0, 0, 0.28);
 
   --blur-soft: 10px;
   --blur-medium: 15px;

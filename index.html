@@ -13,12 +13,12 @@
     <header class="bbfy-header">
       <div class="bbfy-header-inner flex flex_column">
         <!-- top header -->
-        <div
-          class="header-top "
-        >
-          <div class="header-top-inner bbfy-container flex flex_align_center flex_justify_between">
+        <div class="header-top">
+          <div
+            class="header-top-inner bbfy-container flex flex_align_center flex_justify_between"
+          >
             <!-- mobile nav menu toggler -->
-            <button class="mobile-menu-toggler flex flex_column mobi">
+            <button class="mobile-menu-toggler flex_column mobi">
               <svg
                 class="menu-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,8 +40,8 @@
             </div>
 
             <!-- content search container -->
-            <div class="search-container flex flex_align_center">
-              <div class="search-icon">
+            <div class="desk tablet search-container flex flex_align_center">
+              <button class="search-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -54,92 +54,474 @@
                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
                   />
                 </svg>
-              </div>
+              </button>
               <input
-                class="fs-md search-input desk"
+                class="fs-md search-input"
                 placeholder="What are you looking for today?"
                 type="text"
               />
             </div>
+
+
+            <!-- mobile search container toggler -->
+             <div class="mobi mobi-search-container-toggler active">
+              <button class="search-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg>
+              </button>
+              <button class="x-mark-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="white">
+                  <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                </svg>                
+              </button>
+             </div>
+
           </div>
+        </div>
+
+        
+        <!-- small device bottom header -->
+        <div class="mobi mobi-search-input-container active">
+          <input
+            class="fs-md mobi-search-input"
+            placeholder="What are you looking for today?"
+            type="text"
+          />
         </div>
 
         <!-- bottom header -->
-        <div class="header-bottom ">
-          <div class="header-bottom-inner bbfy-container flex flex_align_center flex_justify_between">
+        <div class="header-bottom">
+          <div
+            class="header-bottom-inner bbfy-container flex flex_align_center flex_justify_between"
+          >
             <!-- nav links -->
-          <ul class="nav-categories flex flex_align_center">
-            <li>
-              <button data-category="electronics" type="button" class="">Electronics</button>
-            </li>
-            <li>
-              <button data-category="kitchen" type="button" class="">Kitchen</button>
-            </li>
-            <li>
-              <button data-category="lawn-and-garden" type="button" class="">Lawn & Garden</button>
-            </li>
-            <li>
-              <button data-category="home" type="button" class="">Home</button>
-            </li>
-            <li>
-              <button data-category="computer" type="button" class="">Computer</button>
-            </li>
-            <li>
-              <button data-category="all-categories" type="button" class="">All Categories</button>
-            </li>
-          </ul>
+            <ul class="nav-categories flex flex_align_center">
+              <li class="nav-category-list first">
+                <span>Electronics</span>
+                <!-- sub categories  -->
+                <div class="sub-categories-wrap">
+                  <ul class="sub-categories">
+                    <li><a href="#">Camera & Photo</a></li>
+                    <li><a href="#">Cell Phones & Accessories</a></li>
+                    <li><a href="#">Chargers</a></li>
+                    <li><a href="#">Charging & Power</a></li>
+                    <li><a href="#">Clocks</a></li>
+                    <li><a href="#">Computer Accessories & Peripherals</a></li>
+                    <li><a href="#">Computer Components</a></li>
+                    <li><a href="#">Computer Monitors</a></li>
+                    <li><a href="#">Desktop Monitors</a></li>
+                    <li><a href="#">Drones</a></li>
+                    <li><a href="#">Drones & Accessories</a></li>
+                    <li><a href="#">Earbuds</a></li>
+                    <li><a href="#">Fitness-trackers</a></li>
+                    <li><a href="#">Gaming & Accessories</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Audio & Video Accessories</a></li>
+                    <li>
+                      <a href="#">Binoculars, Microscropes & Telescopes</a>
+                    </li>
+                    <li><a href="#">Blu-ray</a></li>
+                    <li><a href="#">Cables</a></li>
+                    <li><a href="#">Calculators</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-category-list second">
+                <span>Kitchen</span>
+                <!-- sub categories  -->
+                <div class="sub-categories-wrap">
+                  <ul class="sub-categories">
+                    <li><a href="#">Accessories</a></li>
 
-          <!-- hot topics -->
-          <ul class="hot-links flex flex_align_center">
-            <li>
-              <a href="#">Gifts</a>
-            </li>
-            <li>
-              <a href="#">Deals</a>
-            </li>
-            <li>
-              <a href="#">Trending</a>
-            </li>
-          </ul>
+                    <li><a href="#">Blu-ray</a></li>
+                    <li><a href="#">Cables</a></li>
+                    <li><a href="#">Calculators</a></li>
+                    <li><a href="#">Computer Monitors</a></li>
+                    <li><a href="#">Desktop Monitors</a></li>
+                    <li><a href="#">Drones</a></li>
+                    <li><a href="#">Camera & Photo</a></li>
+                    <li><a href="#">Cell Phones & Accessories</a></li>
+                    <li><a href="#">Chargers</a></li>
+                    <li><a href="#">Charging & Power</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Audio & Video Accessories</a></li>
+                    <li>
+                      <a href="#">Binoculars, Microscropes & Telescopes</a>
+                    </li>
+                    <li><a href="#">Clocks</a></li>
+                    <li><a href="#">Computer Accessories & Peripherals</a></li>
+                    <li><a href="#">Computer Components</a></li>
+
+                    <li><a href="#">Drones & Accessories</a></li>
+                    <li><a href="#">Earbuds</a></li>
+                    <li><a href="#">Fitness-trackers</a></li>
+                    <li><a href="#">Gaming & Accessories</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-category-list third">
+                <span>Lawn & Garden</span>
+                <!-- sub categories  -->
+                <div class="sub-categories-wrap">
+                  <ul class="sub-categories">
+                    <li>
+                      <a href="#">Binoculars, Microscropes & Telescopes</a>
+                    </li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Audio & Video Accessories</a></li>
+                    <li><a href="#">Blu-ray</a></li>
+                    <li><a href="#">Cables</a></li>
+
+                    <li><a href="#">Chargers</a></li>
+                    <li><a href="#">Charging & Power</a></li>
+                    <li><a href="#">Clocks</a></li>
+                    <li><a href="#">Calculators</a></li>
+                    <li><a href="#">Camera & Photo</a></li>
+                    <li><a href="#">Cell Phones & Accessories</a></li>
+                    <li><a href="#">Computer Accessories & Peripherals</a></li>
+
+                    <li><a href="#">Drones & Accessories</a></li>
+                    <li><a href="#">Earbuds</a></li>
+                    <li><a href="#">Fitness-trackers</a></li>
+                    <li><a href="#">Gaming & Accessories</a></li>
+                    <li><a href="#">Computer Components</a></li>
+                    <li><a href="#">Computer Monitors</a></li>
+                    <li><a href="#">Desktop Monitors</a></li>
+                    <li><a href="#">Drones</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-category-list fifth">
+                <span>Home</span>
+
+                <!-- sub categories  -->
+                <div class="sub-categories-wrap">
+                  <ul class="sub-categories">
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Audio & Video Accessories</a></li>
+                    <li>
+                      <a href="#">Binoculars, Microscropes & Telescopes</a>
+                    </li>
+                    <li><a href="#">Blu-ray</a></li>
+                    <li><a href="#">Cables</a></li>
+                    <li><a href="#">Calculators</a></li>
+                    <li><a href="#">Camera & Photo</a></li>
+                    <li><a href="#">Cell Phones & Accessories</a></li>
+                    <li><a href="#">Chargers</a></li>
+                    <li><a href="#">Charging & Power</a></li>
+                    <li><a href="#">Clocks</a></li>
+                    <li><a href="#">Computer Accessories & Peripherals</a></li>
+                    <li><a href="#">Computer Components</a></li>
+                    <li><a href="#">Computer Monitors</a></li>
+                    <li><a href="#">Desktop Monitors</a></li>
+                    <li><a href="#">Drones</a></li>
+                    <li><a href="#">Drones & Accessories</a></li>
+                    <li><a href="#">Earbuds</a></li>
+                    <li><a href="#">Fitness-trackers</a></li>
+                    <li><a href="#">Gaming & Accessories</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-category-list fourth">
+                <span>Computer</span>
+
+                <!-- sub categories  -->
+                <div class="sub-categories-wrap">
+                  <ul class="sub-categories">
+                    <li><a href="#">Drones</a></li>
+
+                    <li><a href="#">Fitness-trackers</a></li>
+                    <li><a href="#">Gaming & Accessories</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Audio & Video Accessories</a></li>
+                    <li><a href="#">Drones & Accessories</a></li>
+                    <li><a href="#">Earbuds</a></li>
+
+                    <li><a href="#">Blu-ray</a></li>
+                    <li><a href="#">Cables</a></li>
+                    <li><a href="#">Calculators</a></li>
+                    <li><a href="#">Camera & Photo</a></li>
+                    <li><a href="#">Cell Phones & Accessories</a></li>
+                    <li><a href="#">Chargers</a></li>
+                    <li><a href="#">Clocks</a></li>
+                    <li><a href="#">Computer Accessories & Peripherals</a></li>
+                    <li><a href="#">Charging & Power</a></li>
+
+                    <li><a href="#">Computer Components</a></li>
+                    <li><a href="#">Computer Monitors</a></li>
+                    <li><a href="#">Desktop Monitors</a></li>
+                    <li>
+                      <a href="#">Binoculars, Microscropes & Telescopes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-category-list">
+                <span data-category="all-category">All Categories</span>
+
+                <!-- sub categories  -->
+                <div class="sub-categories-wrap">
+                  <ul class="sub-categories">
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Audio & Video Accessories</a></li>
+                    <li>
+                      <a href="#">Binoculars, Microscropes & Telescopes</a>
+                    </li>
+                    <li><a href="#">Blu-ray</a></li>
+                    <li><a href="#">Cables</a></li>
+                    <li><a href="#">Calculators</a></li>
+                    <li><a href="#">Camera & Photo</a></li>
+                    <li><a href="#">Cell Phones & Accessories</a></li>
+                    <li><a href="#">Chargers</a></li>
+                    <li><a href="#">Charging & Power</a></li>
+                    <li><a href="#">Clocks</a></li>
+                    <li><a href="#">Computer Accessories & Peripherals</a></li>
+                    <li><a href="#">Computer Components</a></li>
+                    <li><a href="#">Computer Monitors</a></li>
+                    <li><a href="#">Desktop Monitors</a></li>
+                    <li><a href="#">Drones</a></li>
+                    <li><a href="#">Drones & Accessories</a></li>
+                    <li><a href="#">Earbuds</a></li>
+                    <li><a href="#">Fitness-trackers</a></li>
+                    <li><a href="#">Gaming & Accessories</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <!-- hot topics -->
+            <ul class="hot-links flex flex_align_center">
+              <li>
+                <a href="#">Gifts</a>
+              </li>
+              <li>
+                <a href="#">Deals</a>
+              </li>
+              <li>
+                <a href="#">Trending</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- large device sub category background overlay -->
+          <div class="subcategory-bg-overlay desk">
+            <div class="overlay"></div>
           </div>
         </div>
 
-          <!-- sub categories -->
-          <div class="">
-            <div class="sub-categories-inner bbfy-container">
 
-              <!-- sub-categories of a category -->
-               <ul class="sub-categories">
-                  <li><a href="#">Accessories</a></li>
-                  <li><a href="#">Audio</a></li>
-                  <li><a href="#">Audio & Video Accessories</a></li>
-                  <li><a href="#">Binoculars, Microscropes & Telescopes</a></li>
-                  <li><a href="#">Blu-ray</a></li>
-                  <li><a href="#">Cables</a></li>
-                  <li><a href="#">Calculators</a></li>
-                  <li><a href="#">Camera & Photo</a></li>
-                  <li><a href="#">Cell Phones & Accessories</a></li>
-                  <li><a href="#">Chargers</a></li>
-                  <li><a href="#">Charging & Power</a></li>
-                  <li><a href="#">Clocks</a></li>
-                  <li><a href="#">Computer Accessories & Peripherals</a></li>
-                  <li><a href="#">Computer Components</a></li>
-                  <li><a href="#">Computer Monitors</a></li>
-                  <li><a href="#">Desktop Monitors</a></li>
-                  <li><a href="#">Drones</a></li>
-                  <li><a href="#">Drones & Accessories</a></li>
-                  <li><a href="#">Earbuds</a></li>
-                  <li><a href="#">Fitness-trackers</a></li>
-                  <li><a href="#">Gaming & Accessories</a></li>
+
+        <!-- header drawer -->
+        <div class="header-drawer-wrapper  mobi">
+          <!-- mobile navlinks -->
+          <div class="navlink-drawer">
+            <div id="navlink-drawer-overlay" class="overlay"></div>
+            <div class="navlink-drawer-inner flex flex_column">
+              <div class="topbar flex flex_align_center flex_justify_between">
+                <!-- site logo -->
+                <div class="bbfy-site-logo">
+                  <a href="/">
+                    <img src="/assets/img/site-logo.png" alt="site logo" />
+                  </a>
+                </div>
+
+                <button class="drawer-closer-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path fill="white" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                  </svg>                  
+                </button>
+              </div>
+
+              <!-- mobile navlinks -->
+               <ul class="mobile-navlinks flex flex_column">
+                  <li class="mobile-nav-category">
+                    <button class="flex flex_align_center flex_justify_between">
+                      <span>All Categories</span>
+                      <span class="dropdown-icon">
+                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path fill="white" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
+                        </svg>
+                        <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path fill="white" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
+                        </svg>                        
+                      </span>
+                     </button>
+    
+                    <!-- sub categories  -->
+                      <ul class="mobile-sub-categories">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Audio & Video Accessories</a></li>
+                        <li>
+                          <a href="#">Binoculars, Microscropes & Telescopes</a>
+                        </li>
+                        <li><a href="#">Blu-ray</a></li>
+                        <li><a href="#">Cables</a></li>
+                        <li><a href="#">Calculators</a></li>
+                        <li><a href="#">Camera & Photo</a></li>
+                        <li><a href="#">Cell Phones & Accessories</a></li>
+                        <li><a href="#">Chargers</a></li>
+                        <li><a href="#">Charging & Power</a></li>
+                        <li><a href="#">Clocks</a></li>
+                        <li><a href="#">Computer Accessories & Peripherals</a></li>
+                        <li><a href="#">Computer Components</a></li>
+                        <li><a href="#">Computer Monitors</a></li>
+                        <li><a href="#">Desktop Monitors</a></li>
+                        <li><a href="#">Drones</a></li>
+                        <li><a href="#">Drones & Accessories</a></li>
+                        <li><a href="#">Earbuds</a></li>
+                        <li><a href="#">Fitness-trackers</a></li>
+                        <li><a href="#">Gaming & Accessories</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">ABOUT US</a></li>
+                  <li><a href="#">GIFT GUIDES</a></li>
+                  <li><a href="#">DEALS</a></li>
+                  <li><a href="#">TRENDING</a></li>
                </ul>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
     </header>
-    <main class="bbfy-main-wrapper bbfy-container"></main>
+
+    <!-- demo content -->
+    <main class="bbfy-main-wrapper bbfy-container">
+      <h1 style="margin-top: 150px" class="fs-5xl">heading 1</h1>
+      <br />
+      <h2 class="fs-4xl">heading 2</h2>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        dolorem id distinctio animi ratione cumque nemo cupiditate odio non,
+        laudantium vero sit dolore consequuntur quam voluptatibus voluptas vel
+        nihil? Temporibus maiores distinctio quasi fugit nostrum doloribus
+        officiis ipsum dicta voluptatem alias ullam doloremque, in obcaecati
+        nihil! Commodi, corrupti eligendi natus recusandae facilis, provident
+        nam id error neque laudantium amet magnam voluptatem unde nesciunt
+        laboriosam corporis sequi! Excepturi odit rem beatae neque debitis unde
+        itaque eveniet ducimus repellendus fuga numquam ex quis optio a culpa
+        quod deserunt, similique cum voluptatibus quisquam voluptatem, dicta
+        alias eaque. Quisquam, tempore adipisci totam necessitatibus similique
+        id ut sunt aut, unde fuga tenetur dolorem rem fugiat dignissimos, quam
+        perspiciatis recusandae minus? Consequuntur impedit, beatae velit autem
+        ex corporis deserunt officia laborum assumenda cum sed facere ducimus
+        cumque quidem amet dignissimos! Beatae dolore possimus, facere
+        exercitationem excepturi architecto distinctio error impedit molestias
+        quo maxime iste similique, nihil culpa, quidem tempore ea eligendi.
+        Debitis sunt dicta tempora pariatur illo perspiciatis aperiam. Omnis,
+        consectetur praesentium impedit reprehenderit similique neque iusto
+        eveniet. Mollitia odio eius accusamus repellat ducimus assumenda impedit
+        itaque dolor. Dolorum labore, quis cumque hic soluta reiciendis iste
+        porro sapiente, voluptatibus, animi odit suscipit amet veritatis
+        assumenda rerum quae nostrum sed accusamus magnam expedita. Asperiores
+        quasi, odio, dolorem corporis voluptas ab ullam ipsa dolorum id
+        blanditiis, explicabo ipsam quod sunt ex eius cupiditate cum facere
+        officia nam velit non tempora repellat. Eveniet repellat totam
+        distinctio. Quam quae voluptatem blanditiis recusandae porro veniam est!
+        Expedita eius aliquam numquam! Molestias delectus vel quia dolore
+        laborum illo modi maxime perspiciatis quasi, minima animi officia enim
+        sequi dolor! Nemo quaerat odio laborum, accusamus eveniet cumque
+        doloremque. Placeat voluptates aut distinctio vel explicabo odio natus
+        vitae quisquam quaerat blanditiis officiis sapiente iusto, soluta illum?
+        Quo, nulla asperiores dignissimos unde aperiam debitis iste minus
+        nostrum vero quos ipsum est provident, velit inventore exercitationem
+        sequi, quaerat molestiae minima. Enim tempora porro quibusdam dicta
+        voluptatum ipsum, veniam fugiat impedit incidunt perspiciatis quod iste
+        dolores magnam earum eligendi? Velit consectetur omnis expedita saepe
+        nemo rerum tenetur neque, facere nisi animi dolore amet cum in fuga
+        provident sed dolorem excepturi qui? Nulla tempore molestias magni
+        deserunt ab corporis, ea quae officia eos omnis voluptate dolores ipsa
+        quaerat aut quis excepturi aliquam repellendus est cumque! Laboriosam,
+        atque cum ducimus eligendi soluta consequuntur illo doloremque quos
+        omnis a itaque saepe repellat vel nesciunt inventore suscipit, eveniet
+        fuga aspernatur alias? Adipisci laborum a aperiam velit odio maiores,
+        quia, cum hic ea quam magnam provident nesciunt? Temporibus tempora
+        nobis excepturi autem ut! Nulla numquam esse et illo quam debitis dolore
+        ab obcaecati temporibus consectetur, tenetur quod, commodi nemo sit unde
+        voluptatum dolorum dolores ea animi nesciunt? Tempora assumenda porro
+        fugit iste! Perspiciatis consectetur sunt harum distinctio voluptates
+        commodi totam modi, porro cupiditate eum quae quod aliquid a aliquam
+        architecto eos. Voluptatem, reiciendis? Quo, maiores! Dicta animi eos,
+        labore maiores, temporibus, asperiores eligendi aliquam ducimus dolor
+        suscipit quae ut neque nam placeat atque. Nisi, esse reprehenderit
+        eligendi iusto at nam natus totam repellat animi ad commodi accusamus
+        vero numquam debitis iste non dolore ea voluptates unde molestiae
+        quibusdam quae tenetur illo. Aut odit, ea expedita unde sed numquam quod
+        earum nobis animi fuga inventore temporibus, veritatis dicta voluptate
+        quia nesciunt est debitis fugiat? Laudantium unde incidunt consequuntur
+        cupiditate reprehenderit quod impedit nesciunt mollitia iure!
+        Voluptatibus consectetur, soluta aliquam eaque temporibus perspiciatis,
+        quam sequi facilis nobis pariatur provident, facere error velit
+        architecto placeat earum! Pariatur esse sit ipsa laborum tempora aut
+        expedita fugiat modi! Ipsa nihil eligendi minima voluptas molestias
+        libero iure possimus ex doloribus perferendis labore molestiae commodi
+        pariatur repellat placeat illum harum ipsam, porro quasi? Officia
+        reiciendis sapiente omnis id corrupti quis, itaque impedit reprehenderit
+        vel aliquam voluptas rerum, cupiditate perferendis adipisci? Est,
+        tenetur. Eum quod vel perspiciatis hic distinctio laudantium illum! Fuga
+        sapiente cum temporibus eligendi eum assumenda eveniet laudantium
+        consectetur. Aperiam quidem dolores, impedit ullam praesentium,
+        dignissimos ea enim quis consectetur omnis repellendus aspernatur atque
+        earum at natus maiores perspiciatis pariatur. Reprehenderit omnis ullam
+        dicta facere sint labore saepe adipisci ut esse numquam veniam eius, ea
+        expedita delectus sapiente amet rerum natus! Error magni nesciunt
+        officiis modi natus vel enim. Hic, quibusdam. Alias perferendis
+        distinctio porro quisquam, mollitia modi. Velit atque sint aperiam ipsa,
+        architecto qui fugiat reprehenderit exercitationem odio esse neque
+        dolore perspiciatis! Harum aliquid ea atque, illum expedita, deleniti
+        ullam laudantium ad praesentium vitae aspernatur? Sed nemo odio rerum,
+        dicta laboriosam facilis. Alias esse, excepturi architecto repellat
+        cupiditate quisquam enim odit quo perspiciatis eligendi soluta id vero
+        officia cum illo aut et. Beatae, numquam ab fuga sint quos quisquam
+        pariatur animi voluptatum non dignissimos. Voluptates, at. Ratione
+        delectus adipisci, autem atque tempore dolor consectetur sunt labore
+        nostrum itaque vel ut iste. Maiores, quidem? Repudiandae praesentium
+        facere, ab libero commodi, fugit debitis iusto architecto magni
+        temporibus culpa id ad quae labore voluptas ex non maxime, pariatur
+        dicta nobis unde illum tenetur incidunt dolorem. Perferendis dolor,
+        aliquam maxime hic nisi sequi doloremque distinctio, eveniet ad
+        voluptates, magni assumenda omnis? Deserunt repudiandae maiores
+        distinctio molestias itaque similique dolor tempore molestiae in ipsam
+        culpa minus tempora corrupti dolore voluptatum expedita illum,
+        consectetur at rem eos sapiente labore nobis nemo. Eius suscipit
+        distinctio expedita quidem, odit ea quos quo ut, minus facere iure eos
+        dolorum eaque! Provident quam iste hic quod quas aliquid, ab saepe odit
+        autem voluptatibus placeat, adipisci a nemo alias assumenda! Sequi
+        dolorem commodi unde culpa harum sapiente placeat inventore! Ex deleniti
+        odit blanditiis delectus. Corrupti vero nisi molestiae nesciunt
+        consequatur ad doloremque? Consequuntur corrupti beatae aliquam quas
+        quidem? Consequatur vel, praesentium voluptatum repellat voluptas
+        voluptatem vitae suscipit dolor sint quasi numquam sed impedit
+        temporibus delectus autem? Voluptatem voluptas iusto sed iste culpa?
+        Unde suscipit culpa nesciunt, molestiae quia ut incidunt sit voluptates
+        qui expedita, maxime, illum delectus. Rerum temporibus mollitia modi
+        ullam aspernatur tempora deleniti, similique eius, earum illum sequi?
+        Repellendus fugiat vel dolor est minima, reiciendis aliquam atque
+        soluta! Saepe laborum dolores, veniam incidunt modi, ipsum molestiae
+        consequuntur soluta dicta dolorum aperiam esse fugit veritatis nesciunt?
+        Amet, vel.
+      </p>
+    </main>
     <footer></footer>
 
     <!-- scripts -->
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/script.js"></script>
   </body>
 </html>
